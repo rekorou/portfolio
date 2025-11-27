@@ -12,9 +12,11 @@ header {
 	margin-bottom: 30px;
 }
 
-#profile-img {
-	width: 150px;
-	border-radius: 50%;
+ width: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40px;   
+  right: 40px;  
 }
 
 button {
