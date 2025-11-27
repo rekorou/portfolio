@@ -18,6 +18,10 @@ header {
 	border-radius: 50%; 
 }
 
+#tech-stack {
+	width: 100px;
+}
+
 button {
 	padding: 10px 20px;
 	margin-top: 10px;
