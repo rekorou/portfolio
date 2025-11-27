@@ -28,6 +28,11 @@ button {
 	cursor: pointer;
 }
 
+#hire-me {
+	background-color: #4CAF50
+}
+
+
 /* Dark Theme */
 body.dark {
 	background-color: #121212;
