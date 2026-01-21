@@ -1,39 +1,242 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Student Portfolio</title>
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-      <header>
-         <h1 id="name">Richard Toledo Jr.</h1>
-         <img src="profile.jpg" alt="Profile Picture" id="profile-img">
-         <p id="course-year">Computer Science - 2nd Year</p>
-         <button id="Hire-me">Hire Me</button>
-         <button id="theme-toggle">Switch Theme</button>
-      </header>
-      </section>
-      <section id="aboutme">
-         <h2>About Me</h2>
-         <p>I am a student developer passionate about building practical systems and web applications. I enjoy learning new technologies and improving my skills through real projects.</p>
-      </section>
-      <section id="achievements">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>IT Specialist - Java [Certiport 2025]</li>
-         </ul>
-      </section>
-      <section id="projects">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>Rice Retailing POS System</li>
-            <li>HotelSys: Hotel Reservation System</li>
-         </ul>
-         <section id="techstack">
-         <h2>Tech Stack</h2>
-         <img src="techstack.png" alt="Tech Stack" id="tech-stack">
-      <script src="script.js"></script>
-   </body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio of Richard C. Toledo Jr — Student Developer" />
+  <title>Richard Toledo Jr | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Skip link for accessibility -->
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Navbar -->
+  <header class="header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Richard Toledo Jr</span>
+      </a>
+
+      <button class="icon-btn nav-toggle"
+        id="navToggle"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="navLinks">
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a class="nav-link active" href="#home">Home</a>
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+
+        <button class="icon-btn theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon" aria-hidden="true">☾</span>
+          <span class="theme-text">Theme</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="section hero" id="home" data-section>
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="badge">Student Developer • PH</p>
+          <h1>
+            Hi, I’m <span class="accent">Richard C. Toledo Jr</span>.
+            <br />
+            I build clean, functional systems and websites.
+          </h1>
+          <p class="lead">
+            I’m focused on Java / JavaFX projects, web development, and building practical systems like
+            inventory + POS solutions.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+
+          <div class="social">
+            <!-- Replace links with your own -->
+            <a class="pill" href="https://github.com/rekorou" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="pill" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a class="pill" href="#" target="_blank" rel="noreferrer">Resume</a>
+          </div>
+        </div>
+
+        <div class="hero-card" aria-label="Profile card">
+          <!-- Put your photo in your repo and change src -->
+          <img class="avatar" src="assets/profile.jpg" alt="Portrait of Richard (replace this image)" onerror="this.style.display='none'" />
+          <div class="hero-card-body">
+            <h2 class="h3">Quick Info</h2>
+            <ul class="quick">
+              <li><span class="muted">Role:</span> Student / Developer</li>
+              <li><span class="muted">Focus:</span> Java, Web, Systems</li>
+              <li><span class="muted">Location:</span> Philippines</li>
+            </ul>
+            <p class="tiny muted">
+              Tip: Add your real photo in <code>assets/profile.jpg</code> (or remove the image).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about" data-section>
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="muted">A short intro recruiters and teachers can understand fast.</p>
+        </div>
+
+        <div class="cards two">
+          <article class="card">
+            <h3>Who I am</h3>
+            <p>
+              I’m a student developer who enjoys building real-world apps—especially systems that help
+              businesses track inventory, sales, and records more efficiently.
+            </p>
+            <p>
+              I’m currently improving my fundamentals and shipping more projects with better UI, cleaner code,
+              and clear documentation.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>What I’m good at</h3>
+            <ul class="list">
+              <li>Building UI-based apps (JavaFX / desktop)</li>
+              <li>Making clean responsive pages (HTML/CSS/JS)</li>
+              <li>Basic programming logic + debugging</li>
+              <li>Documenting projects (README, screenshots, steps)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills" data-section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="muted">Simple and honest — easy to update later.</p>
+        </div>
+
+        <div class="skills-grid" id="skillsGrid" aria-label="Skill list">
+          <!-- JS can populate this too, but static is fine -->
+          <div class="skill">
+            <div class="skill-top">
+              <span>Java / JavaFX</span><span class="muted">Intermediate</span>
+            </div>
+            <div class="bar"><span style="width: 72%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <span>HTML / CSS</span><span class="muted">Intermediate</span>
+            </div>
+            <div class="bar"><span style="width: 70%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <span>JavaScript</span><span class="muted">Developing</span>
+            </div>
+            <div class="bar"><span style="width: 55%"></span></div>
+          </div>
+
+          <div class="skill">
+            <div class="skill-top">
+              <span>Git / GitHub</span><span class="muted">Developing</span>
+            </div>
+            <div class="bar"><span style="width: 50%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects" data-section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Projects</h2>
+          <p class="muted">Rendered from JavaScript so you can edit projects in one place.</p>
+        </div>
+
+        <div class="project-grid" id="projectGrid" aria-live="polite">
+          <!-- JS will inject cards here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact" data-section>
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">This form validates in the browser (client-side JS).</p>
+        </div>
+
+        <div class="cards two">
+          <form class="card form" id="contactForm" novalidate>
+            <label>
+              Name
+              <input type="text" name="name" id="name" placeholder="Your name" required minlength="2" />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" id="email" placeholder="you@example.com" required />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" id="message" rows="5" placeholder="Write your message..." required minlength="10"></textarea>
+            </label>
+
+            <button class="btn" type="submit">Send Message</button>
+            <p class="tiny muted" id="formHint">This demo doesn’t send emails—validation only.</p>
+          </form>
+
+          <aside class="card">
+            <h3>Let’s connect</h3>
+            <p class="muted">You can put your contact details here:</p>
+
+            <ul class="list">
+              <li><strong>Email:</strong> your-email@example.com</li>
+              <li><strong>GitHub:</strong> github.com/rekorou</li>
+              <li><strong>School:</strong> (Optional)</li>
+            </ul>
+
+            <div class="callout">
+              <p class="tiny">
+                Want this to “actually send”? Use a service like Formspree/Netlify Forms later.
+                For now, this meets client-side requirements.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <p class="muted">© <span id="year"></span> Richard C. Toledo Jr. All rights reserved.</p>
+      <a class="muted" href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
 </html>
