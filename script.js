@@ -55,6 +55,14 @@ themeToggle.addEventListener("click", () => {
 // ===== Projects (edit here)
 const projects = [
   {
+    title: "Summative Exam P3",
+    desc: "Summative exam project featuring responsive layouts and interactive client-side behavior.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    links: [
+      { label: "Live", href: "https://m1-summativeexam-p3-toledo.vercel.app/" }
+    ]
+  },
+  {
     title: "Invensync (Inventory + POS System)",
     desc: "Java-based inventory management and POS system with sales tracking and .txt backups.",
     tags: ["Java", "JavaFX", "POS"],
