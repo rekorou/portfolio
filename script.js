@@ -55,6 +55,14 @@ themeToggle.addEventListener("click", () => {
 // ===== Projects (edit here)
 const projects = [
   {
+    title: "Summative Exam P3",
+    desc: "Summative exam project featuring responsive layouts and interactive client-side behavior.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    links: [
+      { label: "Live", href: "https://m1-summativeexam-p3-toledo.vercel.app/" }
+    ]
+  },
+  {
     title: "Invensync (Inventory + POS System)",
     desc: "Java-based inventory management and POS system with sales tracking and .txt backups.",
     tags: ["Java", "JavaFX", "POS"],
@@ -70,15 +78,6 @@ const projects = [
     links: [
       { label: "Repo", href: "https://github.com/rekorou/HotelReservationSystem-HotelSys" },
       { label: "Demo", href: "#" }
-    ]
-  },
-  {
-    title: "Client-side JavaScript Activities",
-    desc: "Small interactive web activities: DOM manipulation, logic, and dynamic content.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    links: [
-      { label: "Repo", href: "https://github.com/rekorou" },
-      { label: "Live", href: "#" }
     ]
   }
 ];
