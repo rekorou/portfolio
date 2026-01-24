@@ -79,15 +79,6 @@ const projects = [
       { label: "Repo", href: "https://github.com/rekorou/HotelReservationSystem-HotelSys" },
       { label: "Demo", href: "#" }
     ]
-  },
-  {
-    title: "Client-side JavaScript Activities",
-    desc: "Small interactive web activities: DOM manipulation, logic, and dynamic content.",
-    tags: ["HTML", "CSS", "JavaScript"],
-    links: [
-      { label: "Repo", href: "https://github.com/rekorou" },
-      { label: "Live", href: "#" }
-    ]
   }
 ];
 
